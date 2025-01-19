@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Soni ❤️</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8c8dc;
+            background-image: radial-gradient(circle, rgba(255, 182, 193, 0.6), rgba(255, 105, 180, 0.8));
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Heart Animation */
+        .heart-animation {
+            font-size: 150px;
+            animation: pulse 1.5s infinite;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.6), 0 0 45px rgba(255, 0, 0, 0.5);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: #ff1493;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #ff69b4;
+            }
+            100% {
+                transform: scale(1);
+                color: #ff1493;
+            }
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 3rem;
+            font-family: 'Georgia', serif;
+            color: #ff6347;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Message Styling */
+        .message {
+            font-size: 1.3rem;
+            color: #fff;
+            line-height: 1.8;
+            max-width: 650px;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 182, 193, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            animation: slideUp 2s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer a {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #ff6347;
+            text-decoration: underline;
+        }
+
+        /* Heart-shaped background */
+        .heart-background {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 300px;
+            background: url('https://cdn.pixabay.com/photo/2017/08/29/03/58/heart-2696593_960_720.png') no-repeat center;
+            background-size: contain;
+            opacity: 0.1;
+            z-index: -1;
+            animation: heartBeat 5s infinite ease-in-out;
+        }
+
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1);
+                opacity: 0.1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.2;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Heart Background -->
+    <div class="heart-background"></div>
+
+    <!-- Heart Animation -->
+    <div class="heart-animation">❤️</div>
+
+    <!-- Main Title -->
+    <h1>For Soni, My Love ❤️</h1>
+
+    <!-- Love Message -->
+    <div class="message">
+        Soni, you are the light of my life, the one who brings joy to my every day. 💖 
+        I am so thankful for you, and I treasure every moment we spend together. 
+        My heart beats for you, and my thoughts are always filled with love for you. 
+        You make my world a better place, and I am so lucky to have you by my side. 
+        Forever yours, always in my heart. ❤️
+    </div>
+
+    <!-- Footer with Contact Link -->
+    <div class="footer">
+        Created with love by your partner ❤️ <br>
+        <a href="mailto:soni@example.com">Send your love back to me ❤️</a>
+    </div>
+
+</body>
+</html>
