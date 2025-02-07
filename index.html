@@ -3,171 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Soni ❤️</title>
+    <title>Happy Rose Day Soni!</title>
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background: #f8c8dc;
-            background-image: radial-gradient(circle, rgba(255, 182, 193, 0.6), rgba(255, 105, 180, 0.8));
-            color: white;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            text-align: center;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
         }
 
-        /* Heart Animation */
-        .heart-animation {
-            font-size: 150px;
-            animation: pulse 1.5s infinite;
-            margin-bottom: 20px;
-            text-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.6), 0 0 45px rgba(255, 0, 0, 0.5);
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                color: #ff1493;
-            }
-            50% {
-                transform: scale(1.1);
-                color: #ff69b4;
-            }
-            100% {
-                transform: scale(1);
-                color: #ff1493;
-            }
-        }
-
-        /* Header Styling */
         h1 {
             font-size: 3rem;
-            font-family: 'Georgia', serif;
-            color: #ff6347;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-            animation: fadeIn 2s ease-out;
+            color: #ff4c7e;
+            margin-bottom: 10px;
         }
 
-        /* Fade-in Animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        p {
+            font-size: 1.5rem;
+            color: #4f4f4f;
+            margin-bottom: 30px;
         }
 
-        /* Message Styling */
-        .message {
-            font-size: 1.3rem;
-            color: #fff;
-            line-height: 1.8;
-            max-width: 650px;
-            margin-top: 20px;
-            padding: 20px;
-            background: rgba(255, 182, 193, 0.7);
-            border-radius: 15px;
-            box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-            animation: slideUp 2s ease-out;
+        .rose {
+            margin: 20px;
         }
 
-        @keyframes slideUp {
-            0% {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Footer Styling */
-        .footer {
-            margin-top: 40px;
-            font-size: 1.2rem;
-            color: #fff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
-
-        .footer a {
-            color: #ff69b4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .footer a:hover {
-            color: #ff6347;
-            text-decoration: underline;
-        }
-
-        /* Heart-shaped background */
-        .heart-background {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
+        .rose-image {
             width: 300px;
-            height: 300px;
-            background: url('https://cdn.pixabay.com/photo/2017/08/29/03/58/heart-2696593_960_720.png') no-repeat center;
-            background-size: contain;
-            opacity: 0.1;
-            z-index: -1;
-            animation: heartBeat 5s infinite ease-in-out;
+            border-radius: 10px;
+            transition: transform 0.3s;
         }
 
-        @keyframes heartBeat {
-            0% {
-                transform: scale(1);
-                opacity: 0.1;
-            }
-            50% {
-                transform: scale(1.2);
-                opacity: 0.2;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 0.1;
-            }
+        .rose-image:hover {
+            transform: scale(1.1);
         }
 
+        .surprise-btn {
+            background-color: #ff4c7e;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .surprise-btn:hover {
+            background-color: #ff1e47;
+            transform: scale(1.05);
+        }
+
+        .surprise {
+            display: none;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+        }
+
+        .surprise-gif {
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="message-container">
+            <h1>Happy Rose Day, Soni!</h1>
+            <p>You're the most beautiful rose in my life!</p>
+        </div>
 
-    <!-- Heart Background -->
-    <div class="heart-background"></div>
+        <div class="rose">
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/13/11/rose-2699024_960_720.jpg" alt="Rose" class="rose-image">
+        </div>
 
-    <!-- Heart Animation -->
-    <div class="heart-animation">❤️</div>
+        <button class="surprise-btn" onclick="showSurprise()">Click to open surprise!</button>
 
-    <!-- Main Title -->
-    <h1>For Soni, My Love ❤️</h1>
-
-    <!-- Love Message -->
-    <div class="message">
-        Soni, you are the light of my life, the one who brings joy to my every day. 💖 
-        I am so thankful for you, and I treasure every moment we spend together. 
-        My heart beats for you, and my thoughts are always filled with love for you. 
-        You make my world a better place, and I am so lucky to have you by my side. 
-        Forever yours, always in my heart. ❤️
+        <div id="surprise" class="surprise">
+            <p>To my beautiful Soni, you make every day feel like a garden of roses. I love you more than words can say. 💖</p>
+            <img src="https://media.giphy.com/media/0X5vLO6sF95DO/giphy.gif" alt="Love Gif" class="surprise-gif">
+        </div>
     </div>
 
-    <!-- Footer with Contact Link -->
-    <div class="footer">
-        Created with love by your partner ❤️ <br>
-        <a href="mailto:pinkuthakur2004@gmail.com">Send your love back to me ❤️</a>
-    </div>
-
+    <script>
+        function showSurprise() {
+            const surprise = document.getElementById("surprise");
+            surprise.style.display = "block";
+        }
+    </script>
 </body>
 </html>
